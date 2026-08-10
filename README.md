@@ -18,14 +18,17 @@ A scalable, console-based Java assessment engine built using core Object-Oriente
 * Custom Exception Handling
 
 ## Project Structure
-* Main.java: The application entry point handling menu navigation and user routing.
-* QuizService.java: Contains the core logic for executing quizzes, capturing input, and evaluating answers.
-* UserService.java: Handles file reading and writing for user registration, login, and data persistence.
-* QuestionBank.java: The central repository initializing and storing all categorized questions.
-* Question.java & MultipleChoiceQuestion.java: The abstract base class and concrete implementation defining question behavior.
-* User.java & QuizResult.java: Data models representing the user and their performance state.
-* InvalidQuizInputException.java: Custom exception class for input validation.
-
+```text
+├── Main.java                        # The application entry point handling menu navigation and user routing
+├── QuizService.java                 # Contains the core logic for executing quizzes, capturing input, and evaluating answers
+├── UserService.java                 # Handles file reading and writing for user registration, login, and data persistence
+├── QuestionBank.java                # The central repository initializing and storing all categorized questions
+├── Question.java                    # Abstract base class defining question behavior
+├── MultipleChoiceQuestion.java      # Concrete implementation defining multiple-choice question behavior
+├── User.java                        # Data model representing user profile state
+├── QuizResult.java                  # Data model representing user performance state
+└── InvalidQuizInputException.java   # Custom exception class for input validation
+```
 ## How to Run
 1. Clone this repository to your local machine.
 2. Open a terminal or command prompt and navigate to the directory containing the source files (the src folder).
